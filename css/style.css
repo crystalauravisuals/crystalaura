@@ -1,8 +1,8 @@
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix")
-      format("embedded-opentype"),
+  src:
+    url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
     url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
     url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
     url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
@@ -269,7 +269,7 @@ figure figcaption {
 }
 
 .logo {
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
@@ -417,11 +417,7 @@ figure figcaption {
   font-size: 50px;
 }
 @media screen and (max-width: 768px) {
-  #colorlib-hero
-    .flexslider
-    .slider-text
-    > .slider-text-inner
-    .heading-section {
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
     font-size: 30px;
   }
 }
@@ -446,11 +442,7 @@ figure figcaption {
   border: 1px solid #fff;
   background: #fff !important;
 }
-#colorlib-hero
-  .flexslider
-  .slider-text
-  > .slider-text-inner
-  .btn.btn-learn:hover {
+#colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
   background: transparent !important;
   border: 1px solid #000 !important;
 }
@@ -948,12 +940,25 @@ body.offcanvas .colorlib-nav-toggle {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transition:
+    -webkit-transform 0.3s,
+    opacity 0.3s;
+  -webkit-transition:
+    opacity 0.3s,
+    -webkit-transform 0.3s;
+  transition:
+    opacity 0.3s,
+    -webkit-transform 0.3s;
+  -o-transition:
+    transform 0.3s,
+    opacity 0.3s;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+  transition:
+    transform 0.3s,
+    opacity 0.3s,
+    -webkit-transform 0.3s;
   -webkit-transform: translate3d(0, -15px, 0);
   transform: translate3d(0, -15px, 0);
   margin-bottom: 15px;
@@ -965,12 +970,25 @@ body.offcanvas .colorlib-nav-toggle {
   display: block;
   color: #999999;
   font-size: 13px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transition:
+    -webkit-transform 0.3s,
+    opacity 0.3s;
+  -webkit-transition:
+    opacity 0.3s,
+    -webkit-transform 0.3s;
+  transition:
+    opacity 0.3s,
+    -webkit-transform 0.3s;
+  -o-transition:
+    transform 0.3s,
+    opacity 0.3s;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+  transition:
+    transform 0.3s,
+    opacity 0.3s,
+    -webkit-transform 0.3s;
   -webkit-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
 }
