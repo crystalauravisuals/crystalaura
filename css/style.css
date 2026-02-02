@@ -1566,11 +1566,6 @@ body.offcanvas .colorlib-nav-toggle {
 .project {
   cursor: pointer;
 }
-/* FIX: allow clicks on links inside animate-box (mobile issue) */
-.animate-box,
-.animate-box * {
-  pointer-events: auto;
-}
 
 @media screen and (max-width: 768px) {
   .colorlib-nav-toggle {
@@ -1638,4 +1633,21 @@ body.offcanvas .colorlib-nav-toggle {
     float: left;
     padding-top: 30px;
   }
+}
+
+/* FIX mobile tap issue caused by nav toggle overlay */
+@media (max-width: 768px) {
+  .colorlib-nav-toggle {
+    pointer-events: none;
+  }
+
+  .colorlib-nav-toggle i {
+    pointer-events: auto;
+  }
+}
+
+.colorlib-contact,
+.colorlib-feature {
+  position: relative;
+  z-index: 50;
 }
