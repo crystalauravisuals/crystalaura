@@ -1535,6 +1535,43 @@ body.offcanvas .colorlib-nav-toggle {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+/* Modal */
+.img-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.img-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Make projects clickable */
+.project {
+  cursor: pointer;
+}
+/* FIX: allow clicks on links inside animate-box (mobile issue) */
+.animate-box,
+.animate-box * {
+  pointer-events: auto;
+}
+
 @media screen and (max-width: 768px) {
   .colorlib-nav-toggle {
     opacity: 1;

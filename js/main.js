@@ -237,3 +237,29 @@
 
 
 }());
+
+const projects = document.querySelectorAll(".project");
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("imgModalContent");
+const closeBtn = document.querySelector(".img-close");
+
+projects.forEach(project => {
+	project.addEventListener("click", () => {
+		const bg = project.style.backgroundImage;
+		const imgUrl = bg.slice(5, -2); // extract url("...")
+		modalImg.src = imgUrl;
+		modal.style.display = "flex";
+	});
+});
+
+closeBtn.addEventListener("click", () => {
+	modal.style.display = "none";
+});
+
+modal.addEventListener("click", (e) => {
+	if (e.target === modal) {
+		modal.style.display = "none";
+	}
+});
+
+
